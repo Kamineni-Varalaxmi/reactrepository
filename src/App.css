@@ -1,0 +1,91 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Basic styles for all links */
+a {
+  text-decoration: none; /* Removes the underline */
+  color: #007bff; /* Default link color */
+  font-size: 16px;
+  padding: 10px 15px;
+  display: inline-block;
+  transition: color 0.3s, background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+a:hover {
+  background-color: #f0f0f0; /* Light grey background on hover */
+  color: #0056b3; /* Darker blue on hover */
+}
+
+/* Active link styling */
+a:active {
+  background-color: #e9ecef; /* Slightly darker background when clicked */
+  color: #004085;
+}
+
+/* Styles for the navbar */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.navbar a {
+  color: white; /* White links in the navbar */
+}
+
+.navbar a:hover {
+  background-color: #555; /* Darker background on hover */
+}
+
+/* Mobile-friendly responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  a {
+    padding: 12px 0;
+    text-align: center;
+  }
+}
